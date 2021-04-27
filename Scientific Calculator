@@ -1,0 +1,115 @@
+#importing library
+import math
+
+def add(a,b):
+    sum = a+b
+    return sum
+    
+def subtract(a,b):
+    sub = a-b
+    return sub
+
+def multiply(a,b):
+    mul = a*b
+    return mul
+
+def divide(a,b):
+    div = a/b
+    return div
+
+def sqrt(a):
+    result = math.sqrt(a)
+    return result
+
+def exp(a):
+    expo = a ** 2
+    return expo
+
+def sin(x):
+    result = math.sin(x)
+    return result
+    
+def cos(x):
+    result = math.cos(x)
+    return result
+
+def tan(x):
+    result = math.tan(x)
+    return result
+
+#choosing the opeartion
+
+print(""" 
+choose a number for the following operations
+1- Addition (x,y)
+2- Subtraction(x,y)
+3- Multiplication(x,y)
+4- Divide(x,y)
+5- Square(x)
+6- Square root(x)
+7- sin(x)
+8- cos(x)
+9- tan(x)""")
+op = int(input('What operation do you want to perform: '))
+
+while op < 10:
+    if op == 1:
+        print('enter the parameters ')
+        x1 = int(input('enter x: '))
+        result1 = add(x1,y1)
+        print('addition', result1)
+        
+    elif op == 2:
+        x2 = int(input('enter x: '))
+        y2 = int(input('enter y: '))
+        result2 = sub(x1,y1)
+        print('subtraction',result2)
+        
+    elif op == 3:
+        x3 = int(input('enter x: '))
+        y3 = int(input('enter y: '))
+        result3 = multiply(x3,y3)
+        print('multiplication',result3)
+        
+    elif op == 4:
+        x4 = int(input('enter x: '))
+        y4 = int(input('enter y: '))
+        result4 = divide(x4,y4)
+        print('division',result4)
+        
+    elif op == 5:
+        x5 = int(input('enter x: '))
+        result5 = exp(x5)
+        print('square', result5)
+    
+    elif op == 6:
+        x6 = int(input('enter x: '))
+        result6 = sqrt(x6)
+        print('square root', result6)
+    
+    elif op == 7:
+        x7 = int(input('enter x: '))
+        result7 = sin(x7)
+        print('sin(x)',result7)
+    
+    elif op == 8:
+        x8 = int(input('enter x: '))
+        result8 = cos(x8)
+        print('cos(x)',result8)
+    
+    elif op == 9:
+        x9 = int(input('enter y: '))
+        result9 = tan(x9)
+        print('tan(x)', result9)
+        
+    else:
+        print('choose another operation: ')
+        
+        
+    new = int(input('Do you want to continue - (yes-1), (No - 0)'))
+    if new == 1:
+        op = int(input('enter operation: '))
+    
+    elif new == 0:
+        print('Thanks for using the scientific calculator.')
+        break
